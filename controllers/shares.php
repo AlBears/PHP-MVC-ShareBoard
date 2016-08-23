@@ -5,4 +5,9 @@ class Shares extends Controller{
 		$viewModel = new ShareModel();
 		$this->ReturnView($viewModel->Index(), true);
 	}
+
+	protected function add(){
+		$viewModel = new ShareModel();
+		$this->ReturnView($viewModel->add(), true);
+	}
 }
