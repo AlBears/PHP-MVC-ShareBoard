@@ -1,4 +1,7 @@
 <?php
+
+namespace classes;
+
 abstract class Model{
 	protected $dbh;
 	protected $stmt;

@@ -1,6 +1,8 @@
 <?php
 
-class HomeModel extends Model {
+namespace models;
+
+class HomeModel extends \classes\Model {
 	public function Index(){
 		return;
 	}

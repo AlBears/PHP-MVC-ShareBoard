@@ -1,6 +1,8 @@
 <?php
 
-class UserModel extends Model {
+namespace models;
+
+class UserModel extends \classes\Model {
 	public function register(){
 		// Sanitize POST
 		$post = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);

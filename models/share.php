@@ -1,6 +1,8 @@
 <?php
 
-class ShareModel extends Model {
+namespace models;
+
+class ShareModel extends \classes\Model {
 	public function Index(){
 		$this->query('SELECT * FROM shares ORDER BY create_date DESC');
 		$rows = $this->resultSet();

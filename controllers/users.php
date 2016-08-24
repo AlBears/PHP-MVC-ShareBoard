@@ -1,6 +1,8 @@
 <?php
 
-class Users extends Controller{
+namespace controllers;
+
+class Users extends \classes\Controller{
 	protected function register(){
 		$viewmodel = new UserModel();
 		$this->returnView($viewmodel->register(), true);
