@@ -1,7 +1,4 @@
 <?php
-namespace classes;
-
-
 class Bootstrap{
 	private $controller;
 	private $action;
@@ -19,12 +16,11 @@ class Bootstrap{
 		} else {
 			$this->action = $this->request['action'];
 		}
-
 	}
 
 	public function createController(){
 		// Check Class
-		if(class_exists( $this->controller)){		
+		if(class_exists(ucfirst($this->controller))){
 			$parents = class_parents($this->controller);
 			// Check Extend
 			if(in_array("Controller", $parents)){

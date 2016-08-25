@@ -6,9 +6,7 @@ require('config.php');
 
 require("vendor/autoload.php");
 
-
-
-$bootstrap = new classes\Bootstrap($_GET);
+$bootstrap = new Bootstrap($_GET);
 $controller = $bootstrap->createController();
 
 if($controller){

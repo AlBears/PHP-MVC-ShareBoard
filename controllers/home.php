@@ -1,11 +1,7 @@
 <?php
-
-namespace controllers;
-
-
-class Home extends \classes\Controller{
+class Home extends Controller{
 	protected function Index(){
-		$viewModel = new models\HomeModel();
-		$this->ReturnView($viewModel->Index(), true);
+		$viewmodel = new HomeModel();
+		$this->returnView($viewmodel->Index(), true);
 	}
 }
